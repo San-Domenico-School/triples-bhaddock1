@@ -9,14 +9,16 @@ public class Scorekeeper
     private static int deckSize, score;
     private static long startTime = System.currentTimeMillis();
     
-    public static void setDeckSize(int deckSize)
+    public static void setDeckSize(int newDeckSize)
     {
-        deckSize = deckSize;
+        deckSize = newDeckSize;
     }
     
-    public static void setUpdateScore()
+    public static void updateScore()
     {
-        long timeTaken = System.currentTimeMillis() - startTime;
+        long currentTime = System.currentTimeMillis();
+        long timeTaken = currentTime - startTime;
+        
         if(timeTaken <= 10000)
         {
             score += 1000;
@@ -33,7 +35,6 @@ public class Scorekeeper
         {
             score += 100;
         }
-        
     }
     
     public static int getScore()

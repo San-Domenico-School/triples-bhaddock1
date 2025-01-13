@@ -7,13 +7,13 @@ import greenfoot.*;
  */
 public class Animations  
 {
-    public static void setWobble(Card card[])
+    public static void wobble(Card[] cards)
     {
         Greenfoot.playSound("wobble.wav");
         
     }
     
-    public static void setSlideAndTurn(Card card[])
+    public static void slideAndTurn(Card[] cards)
     {
         Greenfoot.playSound("swoosh.wav");
     }
