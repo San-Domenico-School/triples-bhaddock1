@@ -77,7 +77,7 @@ public class Dealer extends Actor
             return;
         }
         
-        GreenfootImage cardsImage = new GreenfootImage(String.valueOf(numCardsInDeck), 24, Color.BLACK, new Color(255, 255, 255, 0));
+        GreenfootImage cardsImage = new GreenfootImage(String.valueOf(deck.getNumCardsInDeck()), 24, Color.BLACK, new Color(255, 255, 255, 0));
         Actor cardsRemainingActor = new Actor()
         {
             {
